@@ -1,5 +1,5 @@
 /* color scheme */
-
+$primary-color: #009091;
 $darkgray: #363230;
 $lightgray: #4d4845;
 
@@ -31,7 +31,7 @@ $topbar-dropdown-link-bg: white;
   color: white;
 }
 .middle-bar {
-  background: $darkgray url("/static/barback.png") right no-repeat;
+  background: $darkgray right no-repeat;
   padding-top:15px;
   padding-bottom:15px;
   margin-bottom: 15px;
