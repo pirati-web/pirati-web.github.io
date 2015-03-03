@@ -21,8 +21,6 @@ module.exports = (grunt) ->
       options:
         includePaths: ['bower_components/foundation/scss']
       dist:
-        options:
-          outputStyle: 'compressed'
         files:
           '../static/style.css': 'scss/style.scss'
 
@@ -59,4 +57,4 @@ module.exports = (grunt) ->
 
 
   grunt.registerTask 'build', ['sass', 'concat', 'uglify']
-  grunt.registerTask 'default', ['build','watch']
+  grunt.registerTask 'default', ['sass', 'concat', 'watch']
