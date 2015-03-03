@@ -2,7 +2,6 @@
 
 $darkgray: #363230;
 $lightgray: #4d4845;
-.bgwhite {background:white;}
 
 /* top bar */
 //.white nav {background: white !important;}
@@ -26,13 +25,31 @@ $topbar-dropdown-label-bg: white;
 $topbar-dropdown-bg: white;
 $topbar-dropdown-link-bg: white;
 
-.middle-bar {background:$darkgray;padding-top:15px;padding-bottom:15px;}
+
+// ten cernej radek s napisem mistniho sdruzeni
+.middle-bar h1 {
+  color: white;
+}
+.middle-bar {
+  background: $darkgray url("/static/barback.png") right no-repeat;
+  padding-top:15px;
+  padding-bottom:15px;
+  margin-bottom: 15px;
+}
+#logo {
+  margin-left: 20px;
+}
+.hero {
+  font-size: 18px;
+}
 
 /* candidate list */
 
 div.candidatecolumn {padding-left:0px !important;}
 
-#candidatelist li.active-candidate, #candidatelist li:hover {background:yellow;}
+#candidatelist li.active-candidate, #candidatelist li:hover {
+  background:yellow;
+}
 #candidatelist strong {display:block;}
 #candidatelist img {float:left;margin-right:5px;}
 .orbit-timer, .orbit-slide-number {display:none;}
@@ -46,34 +63,36 @@ ul#candidatelist {margin-left:0px;list-style-type: none;}
 #candidatelist span {display:none;}
 }
 
-#candidatelist a:link, #candidatelist a:hover, #candidatelist a:visited { color:$lightgray !important;}
-
 /* program */
 
-.ilustrace-program {float:right;margin-left:10px;margin-bottom:10px;margin-right:0px;margin-top:0px;}
+.ilustrace-program {
+  float:right;
+  margin-left:10px;
+  margin-bottom:10px;
+  margin-right:0px;
+  margin-top:0px;
+}
 
 @media only screen and (max-width: 500px) {
-.ilustrace-program {
- display:block; width:90%; max-width:300px; margin-right:5%; margin-left:5%; float:none;}}
+  .ilustrace-program {
+    display:block; width:90%; max-width:300px;
+    margin-right:5%; margin-left:5%; float:none;
+  }
+}
 
 div.perex {
-margin-bottom: 20px;
-font-size: 120%;}
+  margin-bottom: 20px;
+  font-size: 120%;
+}
 
 h1 small {
-display: block;
-margin-bottom: 25px;
-margin-top: 10px;}
+  display: block;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
 
-
-/* ikony */
-.icon {font-size: 1.2em;padding-left:3px;}
-#contacts .label { font-size: 90%;
-margin-top: 3px;
-margin-bottom: 3px;}
 
 /* blog */
 img.blog {float: right;
 margin-bottom: 10px;
 margin-left: 10px;}
-
