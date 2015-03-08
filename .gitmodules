@@ -1,0 +1,3 @@
+[submodule "tabor"]
+	path = tabor
+	url = https://github.com/pirati-web/tabor.pirati.cz
