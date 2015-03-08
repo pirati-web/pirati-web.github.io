@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+
+<div class="row">
+    <div class="large-7 columns">
+      <h1>{{ page.title }}{% if page.sub %}<small>{{ page.sub }}</small>{% endif %}</h1>
+      {% if page.perex %}<div class="anotation">{{ page.annotation }}</div>{% endif %}
+      {% if page.perex %}<div class="perex">{{ page.perex }} </div>{% endif %}
+      {{ content }}
+
+      <div id="contacts">
+      {% if page.mail %}<span class="radius secondary label"><i class="icon fi-mail"></i> <a href="mailto:{{ page.mail }}">{{ page.mail }}</a></span>{% endif %}
+      {% if page.telefon %}<span class="radius secondary label"><i class="icon fi-telephone"></i> {{ page.telefon }}</span>{% endif %}
+      {% if page.facebook %}<span class="radius secondary label"><i class="icon fi-social-facebook"></i> <a href="{{ page.facebook }}">{{ page.facebook | remove: "https://www.facebook.com/" }}</a></span>{% endif %}
+      {% if page.github %}<span class="radius secondary label"><i class="icon fi-social-github"></i> <a href="{{ page.github }}">{{ page.github | remove: "https://github.com/"}}</a></span>{% endif %}
+      {% if page.twitter %}<span class="radius secondary label"><i class="icon fi-social-twitter"></i> <a href="{{ page.twitter }}">{{ page.twitter | remove: "https://twitter.com/" }}</a></span>{% endif %}
+      {% if page.priznani %}<span class="radius secondary label"><i class="icon fi-bitcoin-circle"></i> <a href="{{ page.priznani }}">majetkové přiznání</a></span>{% endif %}
+      {% if page.vykaz %}<span class="radius secondary label"><i class="icon fi-clock"></i> <a href="{{ page.vykaz }}">výkaz práce</a></span>{% endif %}
+      {% if page.ukoly %}<span class="radius secondary label"><i class="icon fi-checkbox"></i> <a href="{{ page.ukoly }}">úkoly</a></span>{% endif %}
+      {% if page.foto %}<span class="radius secondary label"><i class="icon fi-camera"></i> <a href="{{ page.foto }}">fotografie</a></span>{% endif %}
+      </div>
+
+    </div>
+</div>
