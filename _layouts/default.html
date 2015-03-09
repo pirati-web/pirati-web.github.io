@@ -19,20 +19,7 @@
     </nav>
   </header>
 
-  <div class="middle-bar">
-    <div class="row">
-      <div class="small-12 columns">
-        <h1 class="left">{{ site.title }}</h1>
-        <img id="logo" src="/static/logo.png" alt="logo" />
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <section role="main">
-      {{ content }}
-    </section>
-  </div>
+  {{ content }}
 
   {% include footer.html %}
 

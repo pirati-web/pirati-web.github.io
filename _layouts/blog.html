@@ -3,23 +3,28 @@ layout: default
 section: blog
 ---
 
+<div class="row">
 
 <div class="small-12 large-8 columns">
 
-  <h2>{{ page.title }}</h2>
+  <section role="main">
 
-  <h6>
-    {% if page.autor %}<autor class="radius label">{{ page.autor }}</autor> | {% endif %}
-    <i class="fa fa-clock-o"></i> <time datetime="{{post.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time>
-  </h6>
+    <h2>{{ page.title }}</h2>
 
-  {% if page.splash %}
-  <img src='{{page.splash}}' alt='splash image' class="img-responsive splash" />
-  {% endif %}
+    <h6>
+      {% if page.autor %}<autor class="radius label">{{ page.autor }}</autor> | {% endif %}
+      <i class="fa fa-clock-o"></i> <time datetime="{{post.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time>
+    </h6>
 
-  {{content}}
+    {% if page.splash %}
+    <img src='{{page.splash}}' alt='splash image' class="img-responsive splash" />
+    {% endif %}
 
-  <span class="category"><i class="fa fa-tags"></i> {{ page.tags | category_links }}</span>
+    {{content}}
+
+    <span class="category"><i class="fa fa-tags"></i> {{ page.tags | category_links }}</span>
+
+  </section>
 
   <hr>
 
@@ -36,7 +41,8 @@ section: blog
 
 </div>
 
-
 <div class="small-12 large-4 columns">
   {% include related.html %}
+</div>
+
 </div>

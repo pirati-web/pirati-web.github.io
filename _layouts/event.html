@@ -2,20 +2,22 @@
 layout: default
 ---
 
+<div class="row">
 
-<div class="small-12 large-8 columns {{ page.style }}">
+  <div class="small-12 large-8 columns">
 
-  <h2>{{page.title}}</h2>
+    <section role="main">
 
-  <h3>{{page.when}}, {{page.where}}</h3>
+      <h2>{{page.title}}</h2>
 
-  <section role="main">
-    {{content}}
-  </section>
+      <h3>{{page.when}}, {{page.where}}</h3>
 
-</div>
+      {{content}}
+    </section>
 
+  </div>
 
-<div class="small-12 large-4 columns {{ page.style }}">
-  {% include related.html %}
+  <div class="small-12 large-4 columns {{ page.style }}">
+    {% include related.html %}
+  </div>
 </div>

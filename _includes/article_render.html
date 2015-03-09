@@ -1,12 +1,12 @@
 
 <article>
-  <h5><a href="{{ item.url }}">{{ item.title }}</a></h5>
+  <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
   <h6>
     {% if item.autor %}<autor class="radius label">{{ item.autor }}</autor> | {% endif %}
     <i class="fa fa-clock-o"></i> <time datetime="{{item.date|date:"%F"}}">{{item.date|date:"%d.%m.%Y"}}</time>
   </h6>
   {% if item.splash %}<img src="{{ item.splash }}" alt="splash image" class="splash" />{% endif %}
   {{ item.excerpt }}
-  <a href="{{ item.url }}" class="right">Více →</a>
+  <a href="{{ item.url }}" class="right">Celý článek →</a>
   <span class="category"><i class="fa fa-tags"></i> {{ item.tags | category_links }}</span>
 </article>

@@ -1,0 +1,9 @@
+
+<article>
+  <h5><a href="{{ item.url }}">{{ item.title }}</a></h5>
+  <a href="{{ item.url }}" class="right">Více →</a>
+  <h6>
+    <i class="fa fa-clock-o"></i> {{item.when|date:"%d.%m.%Y"}} {{item.where}}
+  </h6>
+  {{ item.excerpt }}
+</article>
