@@ -1,27 +1,7 @@
-/*
-	style.css
-	Written by Daigo Fujiwara (@DaigoFuji)
-	Date: PUBLISHEDDATE
-	use this: http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#CSS_Style_Rules
-	also: http://csslint.net/ (Will hurt your feelings)
-*/
+
 
 /* foundation */
 @import "_settings", "foundation";
 
 /* custom */
 @import "_custom";
-
-.splash {
-	margin-bottom: 20px;
-}
-
-.portrets img {
-	margin: 0 15px 15px 0;
-	width: 120px;
-	height: 160px;
-}
-
-.portrets hr {
-	clear: both;
-}

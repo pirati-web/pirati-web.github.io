@@ -1,30 +1,3 @@
-/* color scheme */
-$primary-color: #ffcc00;  // piratska zluta!!
-$darkgray: #363230;
-$lightgray: #4d4845;
-
-/* top bar */
-//.white nav {background: white !important;}
-
-$topbar-bg-color: white;
-$topbar-link-color: $lightgray;
-$topbar-link-color-hover: $lightgray;
-$topbar-link-color-active: $lightgray;
-$topbar-link-color-active-hover: $lightgray;
-$topbar-link-bg-hover: yellow;
-$topbar-link-bg-color-hover: yellow;
-$topbar-link-bg-active-hover: yellow;
-$topbar-link-bg-active: yellow;
-$topbar-link-text-transform: uppercase;
-
-$topbar-menu-link-color: $lightgray;
-$topbar-menu-icon-color: $lightgray;
-$topbar-menu-link-color-toggled: $lightgray;
-$topbar-menu-icon-color-toggled: $lightgray;
-$topbar-dropdown-label-bg: white;
-$topbar-dropdown-bg: white;
-$topbar-dropdown-link-bg: white;
-
 
 // ten cernej radek s napisem mistniho sdruzeni
 .middle-bar h1 {
@@ -41,6 +14,10 @@ $topbar-dropdown-link-bg: white;
 }
 .hero {
   font-size: 18px;
+}
+.hero .row {
+  background: white;
+  color: $primary-color;
 }
 
 /* candidate list */
@@ -96,3 +73,17 @@ h1 small {
 img.blog {float: right;
 margin-bottom: 10px;
 margin-left: 10px;}
+
+.splash {
+  margin-bottom: 20px;
+}
+
+.portrets img {
+  margin: 0 15px 15px 0;
+  width: 120px;
+  height: 160px;
+}
+
+.portrets hr {
+  clear: both;
+}

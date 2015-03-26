@@ -38,6 +38,19 @@ $base-line-height: 150%;
 $row-width: rem-calc(1000);
 $total-columns: 12;
 
+// We use these as default colors throughout
+/* color scheme */
+$piratska-zluta: #ffcc00;
+$primary-color: black;
+$darkgray: #363230;
+$lightgray: #4d4845;
+$secondary-color: #e7e7e7;
+$alert-color: #f04124;
+
+$success-color: #43AC6A;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
+
 // Global
 
 // We use these to define default font weights
@@ -45,7 +58,7 @@ $total-columns: 12;
 // $font-weight-bold: bold !default
 
 // We use these to control various global styles
-$body-bg: #fff;
+$body-bg: $piratska-zluta;
 $body-font-color: #111;
 $body-font-family: 'Source Sans Pro', sans-serif;
 $body-font-weight: 300;
@@ -58,15 +71,6 @@ $font-smoothing: antialiased;
 // $text-direction: ltr;
 // $opposite-direction: right;
 // $default-float: left;
-
-// We use these as default colors throughout
-$primary-color: #ffcc00;  // piratska zluta!!
-$secondary-color: #e7e7e7;
-$alert-color: #f04124;
-
-$success-color: #43AC6A;
-$warning-color: #f08a24;
-$info-color: #a0d3e8;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -1187,7 +1191,7 @@ $paragraph-line-height: 1.5;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: white;
+$topbar-bg-color: $piratska-zluta;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1221,7 +1225,7 @@ $topbar-link-bg-color-hover: $primary-color;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
-// $topbar-link-text-transform: none;
+$topbar-link-text-transform: uppercase;
 // $topbar-link-padding: $topbar-height / 3;
 
 // $topbar-button-font-size: 0.75rem;
