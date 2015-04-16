@@ -4394,7 +4394,7 @@ meta.foundation-mq-topbar {
   height: 2.8125rem;
   line-height: 2.8125rem;
   position: relative;
-  background: #ffcc00;
+  /*background: #ffcc00;*/
   margin-bottom: 0; }
   .top-bar ul {
     margin-bottom: 0;
@@ -4473,7 +4473,8 @@ meta.foundation-mq-topbar {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
-      background: #ffcc00; }
+      /*background: #ffcc00;*/
+      }
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
       .top-bar.expanded .toggle-topbar a span::after {
@@ -4680,7 +4681,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width:40.063em) {
   .top-bar {
-    background: #ffcc00;
+    /*background: #ffcc00;*/
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -4699,7 +4700,8 @@ meta.foundation-mq-topbar {
       height: 1.75rem;
       top: 0.53125rem; }
     .top-bar.expanded {
-      background: #ffcc00; }
+      /*background: #ffcc00;*/
+      }
 
   .contain-to-grid .top-bar {
     max-width: 62.5rem;
@@ -4724,7 +4726,8 @@ meta.foundation-mq-topbar {
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 0.9375rem;
       line-height: 2.8125rem;
-      background: #ffcc00; }
+      /*background: #ffcc00;*/
+      }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: black;
         background: #333333; }
@@ -4812,7 +4815,7 @@ meta.foundation-mq-topbar {
       height: 2.8125rem;
       width: 0; }
     .top-bar-section .has-form {
-      background: #ffcc00;
+      /*background: #ffcc00;*/
       padding: 0 0.9375rem;
       height: 2.8125rem; }
     .top-bar-section .right li .dropdown {
