@@ -4365,7 +4365,8 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #ffcc00; }
+  /*background: #ffcc00;*/
+  }
   .contain-to-grid .top-bar {
     margin-bottom: 0; }
 
